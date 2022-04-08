@@ -1,6 +1,6 @@
 /*
 ============================================================================
- Name        : Trabajo.c
+ Name        : Trabajo Practico 1.c
  Author      : 
  Version     :
  Copyright   : Your copyright notice
@@ -18,7 +18,7 @@ int main(void) {
 	int kilometros=0,precioAerolineas=0,precioLatam=0,opcion=0;
 	int debitoAerolineas=0,creditoAerolineas=0,unitarioAerolineas=0;
 	int debitoLatam=0,creditoLatam=0,unitarioLatam=0;
-	int diferenciaUnitaria=0;
+	int diferenciaPrecios=0;
 	double bitcoinLatam=0,bitcoinAerolineas=0;
 
 while(opcion != 6){
@@ -60,7 +60,7 @@ while(opcion != 6){
 	     		creditoLatam = credito (precioLatam);
 	     		bitcoinLatam = bitcoin (precioLatam);
 	     		unitarioLatam = unitario (precioLatam, kilometros);
-	     		diferenciaUnitaria = diferencia (unitarioAerolineas, unitarioLatam);
+	     		diferenciaPrecios = diferencia (precioAerolineas, precioLatam);
 	     		printf("Se calcularon los costos.");
 	     		}
 	     		else
@@ -76,13 +76,13 @@ while(opcion != 6){
 						"a) Precio con tarjeta de debito: $%i \n"
 						"b) Precio con tarjeta de credito: $%i \n"
 						"c) Precio pagando con bitcoin: %f BTC\n"
-						"d) Mostrar precio unitario: $%i \n"
+						"d) Precio unitario: $%i \n"
 						"Precio Latam: $%i\n"
 						"a) Precio con tarjeta de debito: $%i \n"
 						"b) Precio con tarjeta de credito: $%i \n"
 						"c) Precio pagando con bitcoin: %f BTC\n"
-						"d) Mostrar precio unitario: $%i \n"
-						"La diferencia de precio es: $%i \n" ,kilometros,precioAerolineas,debitoAerolineas,creditoAerolineas,bitcoinAerolineas,unitarioAerolineas,precioLatam,debitoLatam,creditoLatam,bitcoinLatam,unitarioLatam,diferenciaUnitaria);
+						"d) Precio unitario: $%i \n"
+						"La diferencia de precio es: $%i \n" ,kilometros,precioAerolineas,debitoAerolineas,creditoAerolineas,bitcoinAerolineas,unitarioAerolineas,precioLatam,debitoLatam,creditoLatam,bitcoinLatam,unitarioLatam,diferenciaPrecios);
 				}
 	     		else
 	     		{
@@ -104,7 +104,7 @@ while(opcion != 6){
 						"b) Precio con tarjeta de credito: $%i \n"
 						"c) Precio pagando con bitcoin: %f BTC\n"
 						"d) Mostrar precio unitario: $%i \n"
-						"La diferencia de precio es: $%i \n" ,kilometros,precioAerolineas,debitoAerolineas,creditoAerolineas,bitcoinAerolineas,unitarioAerolineas,precioLatam,debitoLatam,creditoLatam,bitcoinLatam,unitarioLatam,diferenciaUnitaria);
+						"La diferencia de precio es: $%i \n" ,kilometros,precioAerolineas,debitoAerolineas,creditoAerolineas,bitcoinAerolineas,unitarioAerolineas,precioLatam,debitoLatam,creditoLatam,bitcoinLatam,unitarioLatam,diferenciaPrecios);
 				break;
 	     	 case 6:
 	     		 exit(0);

@@ -42,13 +42,13 @@
 		return unitarioCalculo;
 	}
 
-	int diferencia(int unitarioAerolineas, int unitarioLatam){
+	int diferencia(int precioAerolineas, int precioLatam){
 		int diferenciaCalculo;
-		if(unitarioAerolineas>unitarioLatam){
-			diferenciaCalculo = unitarioAerolineas-unitarioLatam;
+		if(precioAerolineas>precioLatam){
+			diferenciaCalculo = precioAerolineas-precioLatam;
 			}
 			else{
-				diferenciaCalculo = unitarioLatam - unitarioAerolineas;
+				diferenciaCalculo = precioLatam - precioAerolineas;
 			}
 		return diferenciaCalculo;
 	}

@@ -9,7 +9,7 @@ int debito (int precio);
 int credito (int precio);
 float bitcoin (int precio);
 int unitario (int precio, int kilometros);
-int diferencia (int unitarioAerolineas, int unitarioLatam);
+int diferencia (int precioAerolineas, int precioLatam);
 
 #ifndef CALCULOS_H_
 #define CALCULOS_H_
