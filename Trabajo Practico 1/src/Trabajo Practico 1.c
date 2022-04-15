@@ -35,12 +35,13 @@ while(opcion != 6){
 	     switch(opcion)
 	     {
 	     	 case 1:
+	     		 printf("Kilometros Actuales: %i\n",kilometros);
 	     		 printf("Ingrese los kilometros del vuelo: ");
 	     		 kilometros = ingreso(kilometros);
 	     		 system("cls");
 	     		 break;
 	     	 case 2:
-	     		 printf("Ingrese los precios de los vuelos:\n (Precios actuales: Aerolineas= $%i, Latam $%i)",precioAerolineas,precioLatam);
+	     		 printf("Ingrese los precios de los vuelos:\n (Precios actuales: Aerolineas= $%i, Latam $%i)\n",precioAerolineas,precioLatam);
 	     		 printf("Precio del vuelo en Aerolineas: $");
 	     		 precioAerolineas = ingreso (precioAerolineas);
 	     		 printf("Precio del vuelo en Latam: $");
